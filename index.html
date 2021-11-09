@@ -27,25 +27,25 @@
 								
 								<div id="clockdiv">
 								  <div>
-									<span id="days"></span>
+									<span id="days">0</span>
 									<div class="smalltext">Ngày</div>
 								  </div>
 								  <div>
-									<span id="hours"></span>
+									<span id="hours">0</span>
 									<div class="smalltext">Giờ</div>
 								  </div>
 								  <div>
-									<span id="minutes"></span>
+									<span id="minutes">0</span>
 									<div class="smalltext">Phút</div>
 								  </div>
 								  <div>
-									<span id="seconds"></span>
+									<span id="seconds">0</span>
 									<div class="smalltext">Giây</div>
 								  </div>
 								</div>	
 								<br>
-								<p style="font-size: 18px; margin: 0; padding: 0;" ><b>Thời Gian Mở Đơn đăng Ký: 0h - Ngày 22/10/2021</b></p>
 								<p style="font-size: 18px; margin: 0; padding: 0;" ><b>Hạn Đăng Ký: 23h59 - Ngày 8/11/2021</b></p>
+								<p style="font-size: 18px; margin: 0; padding: 0;" ><b>Đã hết thời hạn đăng ký.</b></p>
 							</div>
 						</div>
 						<nav>
@@ -232,28 +232,28 @@
 			<script src="assets/js/util.js"></script>
 			<script src="assets/js/main.js"></script>
 
-			<!--Begin: Scripts CoundownTimer -->
+			 <!--Begin: Scripts CoundownTimer -->
 			<script>
-				var fuT = new Date("nov 9, 2021 00:00:00").getTime()
-			setInterval(function(){
+			//	var fuT = new Date("").getTime()
+			//	setInterval(function(){
+//
+//				var noW = new Date().getTime()
+//				var D = fuT - noW
+//				var days = Math.floor(D/(1000*60*60*24))
+//				var hours = Math.floor(D/(1000*60*60))
+//				var minutes = Math.floor(D/(1000*60))
+//				var seconds = Math.floor(D/(1000))
 
-				var noW = new Date().getTime()
-				var D = fuT - noW
-				var days = Math.floor(D/(1000*60*60*24))
-				var hours = Math.floor(D/(1000*60*60))
-				var minutes = Math.floor(D/(1000*60))
-				var seconds = Math.floor(D/(1000))
+//				hours %= 24
+//				minutes %= 60
+//				seconds %= 60
 
-				hours %= 24
-				minutes %= 60
-				seconds %= 60
-
-				document.getElementById("days").innerText = days
-				document.getElementById("hours").innerText = hours
-				document.getElementById("minutes").innerText = minutes
-				document.getElementById("seconds").innerText = seconds
-			},1000)
+//				document.getElementById("days").innerText = days
+//				document.getElementById("hours").innerText = hours
+//				document.getElementById("minutes").innerText = minutes
+//				document.getElementById("seconds").innerText = seconds
+//			},1000)
 			</script>
-			<!--End: Scripts CoundownTimer -->
+			<!--End: Scripts CoundownTimer --> 
 	</body>
 </html>
